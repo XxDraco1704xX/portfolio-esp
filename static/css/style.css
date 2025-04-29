@@ -8,15 +8,15 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 2;
   padding: 0 3%;
-  font-family: "Mulish", sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 20px;
   letter-spacing: 0.2em;
-  background: linear-gradient(180deg, #392657 0%, rgba(57, 38, 87, 0.8) 100%);
-  color: #ffffff;
+  background: linear-gradient(180deg, #10e5a5e2 0%, rgba(15, 20, 90, 10) 80%);
+  color: #12185eec;
 }
 
 h1,
@@ -76,8 +76,8 @@ ul {
   width: 55%;
   height: 3px;
   bottom: -12px;
-  background: #a178b9;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #d2203e;
+  box-shadow: 0px 4px 4px rgba(179, 160, 16, 0.326);
 }
 
 .list-item__link:hover::after {
@@ -93,14 +93,14 @@ ul {
   background-size: cover;
   padding: 10vh 10vw 80vh 10vw;
   background-position: center bottom;
-  gap: 20px;
+  gap: 10px;
 }
 
 .home__title {
   letter-spacing: 0.3em;
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
-  color: #a178b9;
+  color: #0a147eee;
   line-height: 1;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -132,11 +132,11 @@ ul {
 .about__title::after {
   position: absolute;
   content: "";
-  border-radius: 10px;
+  border-radius: 8px;
   width: 60%;
   height: 1px;
-  bottom: -13px;
-  background: #fff;
+  bottom: -10px;
+  background: #147a9c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -145,12 +145,31 @@ ul {
   justify-content: space-between;
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans.woff2') format('woff2');
+  font-display: swap;
+}
+
+
 .info-block__text {
-  width: 40%;
+  width: 60%;
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.2
 }
 
 .info-block__img {
   align-self: center;
+  width:300px;
+  height: 650px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  
+  border: 5px solid rgba(29, 10, 197, 0.854); /* ← agregamos un azul rojo de 5px */
+  
 }
 
 .skills {
@@ -166,7 +185,7 @@ ul {
   text-align: left;
   color: #cc8bf2;
   line-height: 1;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 4, 5, 0.71);
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -181,7 +200,7 @@ ul {
   height: 1px;
   bottom: -13px;
   background: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(15, 15, 3, 0.795);
 }
 
 
@@ -198,10 +217,15 @@ ul {
   align-items: center;
   gap: 20px;
   text-align: center;
+  color: rgba(227, 227, 19, 0.822);
+  font-size: 20px
 }
 
 .skill__info {
   width: 150px;
+  font-size: 20px;
+  color: rgba(227, 227, 19, 0.822)
+
 }
 
 .skill__button {
@@ -266,7 +290,7 @@ ul {
   font-size: 60px;
   position: relative;
   text-align: left;
-  color: #cc8bf2;
+  color: #68df3d;
   line-height: 1;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -301,8 +325,8 @@ ul {
 .form__input {
   width: 100%;
   font: inherit;
-  background: #392657;
-  border: 2px solid #a178b9;
+  background: #065309d2;
+  border: 2px solid #68df3d ;
   color: #fff;
   padding: 15px;
   border-radius: 10px;
@@ -324,10 +348,63 @@ ul {
   font: inherit;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(111.97deg, #CC8BF2 35.63%, rgba(204, 139, 242, 0) 150.16%);
+  background: linear-gradient(111.97deg, #68df3d 35.63%, rgba(60, 219, 100, 0) 150.16%);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
   padding: 15px 30px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+
+.footer{
+font: Verdana;
+color:#9124cf;
+font-weight: 600
+}
+/* Estilos para el footer */
+footer {
+  background-color: #222; /* Fondo oscuro */
+  color: #fff;           /* Texto blanco */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el título */
+.socialmedia_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón */
+.socialmedia_button {
+  background-color: #e1306c; /* Color icónico de Instagram */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+/*Facebook*/
+.socialmedia_button:nth-of-type(2) {
+  background-color: #4267B2; /* Color icónico de Facebook */
+}
+.socialmedia_button:nth-of-type(2):hover {
+  background-color: #365899; /* Color más oscuro al pasar el mouse */
+}
+
+/*Tik Tok*/
+.socialmedia_button:nth-of-type(3) {
+  background-color: #220323; 
+}
+.socialmedia_button:nth-of-type(3):hover {
+  background-color: #444444; /* Color más claro al pasar el mouse */
+}
+
+
+.socialmedia_button:hover {
+  background-color: #621631; /* Color más oscuro al pasar el mouse */
 }

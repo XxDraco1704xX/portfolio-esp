@@ -29,18 +29,24 @@
     <main class="main">
       <!-- Vista previa -->
       <section class="main__home home" id="home">
-        <h1 class="home__title">NAME SURNAME</h1>
-        <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
+        <h1 class="home__title">MIGUEL ANGEL RANGEL RUIZ</h1>
+        <p class="home__subtitle">DESAROLLADOR WEB, PROGRAMADOR DE PYTHON</p>
       </section>
       <!-- Acerca de mí -->
       <section class="main__about about" id="about">
-        <h2 class="about__title">ABOUT ME</h2>
+        <h2 class="about__title">ACERCA DE MÍ</h2>
         <div class="about__info info-block">
           <p class="info-block__text">
-            Inform about me Inform about me Inform about me Inform about me
-            Inform about me Inform about me Inform about me Inform about me
-            Inform about me
-          </p>
+            Mi nombre es Miguel Angel Rangel Ruiz, soy estudiante de programación en Python y Hacking ético, para mi
+            pasar tiempo en los editores de codigo es un hobbie, a pesar de que en ocasiones me da pereza, cuando tengo
+            un compromiso, hago hasta lo imposible por cumplirlo, a lo largo de mi carrera como programador he pasado ganado
+            un premio en un torneo de programación con Python, organizado por el colegio Tilata que queda en la calera, he pasado
+            multiples tareas de la plataforma arukay de mi institución educativa, he pasado por un curso de Python Zero de Kodland y hoy
+            estoy completando un curso de Udemy de hacking etico (el cual me olvide de él un tiempo pero ya  lo retomare), y un curso de Python pro en Kodland.
+            Mis hobbies son  ver y jugar futbol, especialmente de portero, aunque en ocasiones veo basketball y hockey, soy muy dedicado a mis metas,
+            me encanta jugar al "Rocket League", un videojuego de futbol pero con carros y trabajo duro para acercarme a la ingeneria de sistemas y 
+            arquitectura de software cada vez más.
+           </p>
           <img
             class="info-block__img"
             src="../static/img/profile.png"
@@ -50,54 +56,60 @@
           />
         </div>
       </section>
-      <!-- Sección de competencias -->
-      <section class="main__skills skills" id="skills">
-        <h2 class="skills__title">MY SKILLS</h2>
-        <form action="/" method="POST">
-          <ul class="skills__list skills-list">
-            <li class="skills-list__skill skill">
-              <img
-                class="skill__img"
-                src="../static/img/python.png"
-                alt="python"
-                width="150"
-                height="150"
-              />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT">
+    <!-- Sección de competencias -->
+<section class="main__skills skills" id="skills">
+  <h2 class="skills__title">MY SKILLS</h2>
+  <ul class="skills__list skills-list">
+    <li class="skills-list__skill skill">
+      <img
+        class="skill__img"
+        src="../static/img/python.png"
+        alt="python"
+        width="150"
+        height="150"
+      />
+      <span class="skill__info">Proyecto final de Python Zero, da mucha nostalgia</span>
+      <button
+        class="skill__button"
+        onclick="window.location.href='https:/hub.kodland.org/en/project/307046';">
+        SHOW PROJECT
+      </button>
+    </li>
+  </ul>
+</section>
+ <!--Discord-->
+            <input class="skill_button" type="submit" name="button_python" value="SHOW PROJECT">
             </li>
-            <li class="skills-list__skill skill">
+            <li class="skills_list_skill skill">
               <img
-                class="skill__img"
+                class="skill_img"
                 src="../static/img/discord.png"
                 alt="discord"
                 width="150"
                 height="150"
               />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_discord" value="SHOW PROJECT">
+              <span class="skill_info">Bot de Discord que hicimos entre todos en esta academia</span>
+              <button
+              class="skill_button"
+              onclick = "window.location.href='https:/github.com/XxDraco1704xX/M2-L1';">
+              SHOW PROJECT
+              </button>
             </li>
             <li class="skills-list__skill skill">
               <img
-                class="skill__img"
-                src="../static/img/html.png"
+                class="skill_img"
+                src="../static/img/Icono_Appinventor.jpg"
                 alt="html"
                 width="150"
                 height="150"
               />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_html" value="SHOW PROJECT">
-            </li>
-            <li class="skills-list__skill skill">
-              <img
-                class="skill__img"
-                src="../static/img/db.webp"
-                alt="SQL"
-                width="150"
-                height="150"
-              />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_db" value="SHOW PROJECT">
+              <span class="skill__info">Prototipo de aplicación de cuidado de plantas personalizable hecho en App Inventor</span>
+              <button
+              class="skill_button"
+              onclick = "window.location.href='https:/gallery.appinventor.mit.edu/?galleryid=a6691798-150f-4e81-837c-799ffb398979';">
+              SHOW PROJECT
+              </button>
+        
             </li>
           </ul>
         </form>
@@ -113,7 +125,7 @@
         <h2 class="feedback__title">FEEDBACK</h2>
         <form action="" method="POST" class="feedback__form form">
           <label for="email">
-            <input type="email" class="form__input" name="email" id="email" placeholder="Введите E-mail" required>
+            <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
           </label>
           <label for="text">
             <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
@@ -124,7 +136,24 @@
     </main>
     <!-- Pie de página con enlaces a redes sociales -->
     <footer>
-
+      <section class = "socialmedia media" id="socialmedia">
+        <h1 class = "socialmedia_title">ENLACE A REDES SOCIALES</h1>
+        <button
+              class="socialmedia_button"
+              onclick = "window.location.href='https:/www.instagram.com/elmigue_2e/';">
+              INSTAGRAM
+      </button>
+      <button
+            class="socialmedia_button"
+            onclick = "window.location.href='https:/www.facebook.com/profile.php?id=61572182732198';">
+            FACEBOOK
+      </button> 
+      <button
+            class="socialmedia_button"
+            onclick = "window.location.href='https:/www.tiktok.com/@elmigue_2e';">
+            TIK TOK
+    </button> 
+      </section>
     </footer>
   </body>
 </html>
